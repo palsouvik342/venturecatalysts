@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-theme-color: #e84857;
+  --primary-text-color: #383838;
+  --secondary-text-color: #434343;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+@layer components {
+  @media (min-width: 768px) {
+    .container {
+      @apply w-[750px];
+    }
+  }
+
+  @media (min-width: 992px) {
+    .container {
+      @apply w-[970px];
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      @apply w-[1170px];
+    }
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto
+  }
+}
